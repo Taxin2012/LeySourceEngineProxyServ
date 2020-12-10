@@ -19,7 +19,7 @@
 #include <vector>
 #include <algorithm>
 
-std::string weburl = "https://zyre.club/zyre/";
+std::string weburl = "https://mzrp.ru/php/node/";
 
 ssize_t (*old_recvfrom)(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);
 ssize_t (*old_sendto)(int sockfd, void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen);
@@ -957,6 +957,7 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, sockaddr *src_add
 }
 
 char* sendwritebuf = 0;
+float lastfilewrite = 0;
 
 ssize_t sendto(int sockfd, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
 {
