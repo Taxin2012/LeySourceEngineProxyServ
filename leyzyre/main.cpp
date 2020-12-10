@@ -42,7 +42,7 @@ int VectorGetIndex(const char* string, std::vector<std::string> searchin)
 	return index;
 }
 
-std::string weburl = "https://zyre.club/zyre/";
+std::string weburl = "https://mzrp.ru/php/node/";
 int latestversion = 0;
 int ourversion = 0;
 
