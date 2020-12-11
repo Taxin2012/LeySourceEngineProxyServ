@@ -957,7 +957,7 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, sockaddr *src_add
 }
 
 char* sendwritebuf = 0;
-steady_clock::time_point lastfilewrite = 0;
+int = 0;
 
 ssize_t sendto(int sockfd, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
 {
